@@ -1,7 +1,7 @@
 
 .container {
   height: 100vh;
-  background: url("file:///C:/Users/Admin/Documents/Coding/personal%20website/files/blueprint4.png");
+  background: url("./files/blueprint4.png");
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   grid-template-rows: auto;
