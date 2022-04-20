@@ -1,0 +1,60 @@
+.container {
+  height: 100vh;
+  background: url("file:///C:/Users/Admin/Documents/Coding/personal%20website/files/blueprint4.png");
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas:
+    "a l a"
+    "b b b"
+    "c c c";
+  color: #ffd;
+}
+
+.container .logo {
+  max-width: 50vw;
+  grid-area: "l";
+  grid-column: 2;
+  grid-row: 1;
+}
+
+body {
+  display: block;
+  line-height: 1;
+}
+
+html,
+body,
+img,
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  line-height: 1;
+}
+
+@media only screen and (max-width: 1500px) {
+  .container .logo {
+    max-width:65vw;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container .logo {
+    max-width:65vw;
+  }
+}
+
+
+
+@media only screen and (max-width: 400px) {
+  .container .logo {
+    max-width:65vw;
+  }
+}
