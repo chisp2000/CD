@@ -17,23 +17,18 @@
 .container .planet {
   grid-row: 3;
   grid-column: 2;
-  max-width: 40vw;
+  max-width: 60vw;
   margin: 1vw;
 }
 
 .container .logo {
-  max-width: 50vw;
+  max-width: 60vw;
   grid-area: "l";
   grid-column: 2;
   grid-row: 1;
   margin-top: 0.5vw;
 }
 
-
-
-
-
-}
 body {
   display: block;
   line-height: 1;
@@ -101,6 +96,19 @@ button {
   }
 }
 
+@keyframes floatAndDisappear {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+}
+
+.planet {
+  cursor: pointer;
+}
 
 button {
   align-items: center;
@@ -117,8 +125,8 @@ button {
   height: 48px;
   justify-content: center;
   letter-spacing: -.8px;
-  line-height: 24px;
-  min-width: 140px;
+  line-height: 49px;
+  min-width: 250px;
   outline: 0;
   padding: 0 17px;
   text-align: center;
@@ -132,6 +140,7 @@ button {
 .button-58:focus {
   color: #171e29;
 }
+
 
 .button-58:hover {
   background-color: #3385ff;
