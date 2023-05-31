@@ -1,14 +1,5 @@
-
-
-
-
-function hide_image(id) {
-  var box = document.getElementById(id);
-
-  var opacity = 1
-  for (let trans = 0; trans < 100; trans++) {
-    opacity -= 0.1 
-    box.style.opacity = opacity;
-
-}
+function floatAndDisappear() {
+  const planet = document.getElementById("gif");
+  planet.style.animation = "floatAndDisappear 2s forwards";
+  // Add any additional actions you want to perform after the animation completes
 }
