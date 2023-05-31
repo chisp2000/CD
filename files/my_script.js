@@ -1,24 +1,42 @@
-function goToHome() {
-  location.reload(); // Refresh the page
-}
-
 function floatAndDisappear() {
   const planet = document.getElementById('gif');
-  const navbar = document.getElementById('navbar');
+  planet.style.animation = 'floatAndDisappear 1s forwards';
+
   const projectsBody = document.getElementById('projectsBody');
-
-  planet.style.animation = "floatAndDisappear 2s forwards";
-
-  // Add event listener to detect when the animation ends
-  planet.addEventListener('animationend', function() {
+  if (projectsBody) {
     projectsBody.classList.add('slide-up-and-fade-in');
+  }
 
-    // After the animation ends, fade in the navbar
-    if (navbar) {
-      setTimeout(function() {
-        navbar.classList.remove('hide');
-        navbar.classList.add('fade-in');
-      }, 200); // Adjust the delay as needed
-    }
-  });
+  const navbar = document.getElementById('navbar');
+  if (navbar) {
+    navbar.classList.remove('hide');
+  }
+}
+
+function showContact() {
+  const projectsBody = document.getElementById('projectsBody');
+  const contactBody = document.getElementById('contactBody');
+
+  if (projectsBody && contactBody) {
+    projectsBody.classList.remove('slide-up-and-fade-in');
+    projectsBody.classList.add('hide');
+    contactBody.classList.remove('hide');
+    contactBody.classList.add('slide-up-and-fade-in');
+  }
+}
+
+function showProjects() {
+  const projectsBody = document.getElementById('projectsBody');
+  const contactBody = document.getElementById('contactBody');
+
+  if (projectsBody && contactBody) {
+    contactBody.classList.remove('slide-up-and-fade-in');
+    contactBody.classList.add('hide');
+    projectsBody.classList.remove('hide');
+    projectsBody.classList.add('slide-up-and-fade-in');
+  }
+}
+
+function goToHome() {
+  location.reload(); // Refresh the page
 }
