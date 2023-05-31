@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,14 +6,25 @@
   <script type="text/javascript" src="./files/my_script.js"></script>
 </head>
 <body>
+  <header>
+    <nav id="navbar" class="hide">
+      <img src="./files/LOGO_UPPER.png" class="logo" onclick="goToHome()">
+      <ul>
+        <li><a href="#" onclick="showContact()">CONTACT</a></li>
+        <li><a href="#" onclick="showProjects()">PROJECTS</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <div class="container">
-    <img src="./files/logo4.png" class="logo">
-    <img id="gif" src="./files/planet_w_text.gif" onclick="floatAndDisappear()" class="planet">
-    <div class="navigation">
-      <button type="button" onclick="window.open('index2.html', '_blank')">Projects</button>
-      <button type="button">Projects</button> <br>
-      <button type="button">Projects</button>
-      <button type="button">Projects</button>
+    <img id="gif" src="./files/planet_w_textUPSC.gif" onclick="floatAndDisappear()" class="planet">
+
+    <div id="projectsBody" class="hide">
+      <h1>Pride and Work</h1>
+    </div>
+
+    <div id="contactBody" class="hide">
+      <h1>C</h1>
     </div>
   </div>
 </body>
