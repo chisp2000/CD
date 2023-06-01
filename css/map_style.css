@@ -1,6 +1,6 @@
 #map {
-  width: 85vw; /* Set the width to 100% to fill the entire width of the container */
-  height: 90vh; /* Set the height to 100% to fill the entire height of the container */
+  width: 74vw; /* Set the width to 100% to fill the entire width of the container */
+  height: 79vh; /* Set the height to 100% to fill the entire height of the container */
   display: none;
   justify-content: center; /* Center the SVG horizontally */
   align-items: center; /* Center the SVG vertically */
@@ -15,7 +15,7 @@ path#Ukraine {
 
 #Ukraine:hover {
   fill: lightblue !important;
-
+  filter: drop-shadow(0 0 5px orange) hue-rotate(180deg) !important;
   cursor: pointer !important;
 }
 
@@ -25,7 +25,7 @@ path#USA {
 
 #USA:hover {
   fill: lightblue !important;
-
+  filter: drop-shadow(0 0 5px orange) hue-rotate(180deg) !important;
   cursor: pointer !important;
 }
 
@@ -35,6 +35,6 @@ path#Norway {
 
 #Norway:hover {
   fill: lightblue !important;
-
+  filter: drop-shadow(0 0 5px orange) hue-rotate(180deg) !important;
   cursor: pointer !important;
 }
