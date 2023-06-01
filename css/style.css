@@ -39,6 +39,23 @@ nav {
   transition: opacity 0.9s ease;
 }
 
+.navbar-contact {
+  background-color: transparent;
+  color: #FFFDD0;
+  padding: 11px 20px;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navbar-contact:hover {
+  color: #fff;
+  filter: drop-shadow(0 0 1px lightblue) hue-rotate(10deg);
+}
+
 .planet {
   align-items: center;
   justify-content: center;
