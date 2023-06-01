@@ -1,0 +1,40 @@
+#map {
+  width: 85vw; /* Set the width to 100% to fill the entire width of the container */
+  height: 90vh; /* Set the height to 100% to fill the entire height of the container */
+  display: none;
+  justify-content: center; /* Center the SVG horizontally */
+  align-items: center; /* Center the SVG vertically */
+}
+
+path {
+  stroke: #FFFDD0 !important;
+}
+path#Ukraine {
+  fill:orange !important;
+}
+
+#Ukraine:hover {
+  fill: lightblue !important;
+
+  cursor: pointer !important;
+}
+
+path#USA {
+  fill:orange!important;
+}
+
+#USA:hover {
+  fill: lightblue !important;
+
+  cursor: pointer !important;
+}
+
+path#Norway {
+  fill:orange!important;
+}
+
+#Norway:hover {
+  fill: lightblue !important;
+
+  cursor: pointer !important;
+}
