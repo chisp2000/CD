@@ -84,7 +84,7 @@ nav {
     opacity: 0;
   }
   100% {
-    transform: translateY(-59%);
+    transform: translateY(-61%);
     opacity: 1;
   }
 }
